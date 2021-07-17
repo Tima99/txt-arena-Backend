@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+*{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Logo section */
+head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.logo-box{
+    /* width: 100%; */
+    background-color: rgb(161, 89, 212);
+    background-color: rgb(152, 69, 230);
+    padding: .5rem 0;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 24vw;
+}
+
+/* Nav section */
+
+nav{
+    /* background-color: purple; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .4rem 0;
+    background-color: rgb(160, 82, 233);
+    position: relative;
+}
+nav a{
+    color: rgb(31, 30, 30);
+    font-size: 3.5vw;
+    text-decoration: none;
+}
+nav a:hover{
+    cursor: pointer;
+    color: white;
+}
+.active{
+    color: whitesmoke;
+}
+
+.indicator{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 29vw;
+    width: 3vw;
+    height: 3vw;
+    background-color: rgb(160, 82, 233);
+    transform: rotate(45deg) translateY(2.1vw);
+    -webkit-transform: rotate(45deg) translateY(2.1vw);
+    -moz-transform: rotate(45deg) translateY(2.1vw);
+    -ms-transform: rotate(45deg) translateY(2.1vw);
+    -o-transform: rotate(45deg) translateY(2.1vw);
+}
+
+.left-indicate{
+    left: 33vw;
+}

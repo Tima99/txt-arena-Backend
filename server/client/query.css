@@ -1,0 +1,70 @@
+
+.dp-none{
+    display: none;
+}
+/* nav and logo */
+@media screen and (orientation : landscape) {
+    
+    section.logo-box{
+        background-color: rgb(160, 82, 233);
+        height: 8vh;
+    }
+    
+    .logo img{
+        width: 16vh;
+    }
+    
+    section.logo-box{
+        width: 20%;
+        float: left;
+    }
+
+    nav{
+        width: 80%;
+        height: 8vh;
+        justify-content: flex-start;
+    }
+    nav a{
+        font-size: 3.5vh;
+        margin: 0 5rem;
+    }
+    
+    .indicator{
+        width: 3vh;
+        height: 3vh;
+        left: 40.5vh;
+        transform: translateY(1.5vh) rotate(45deg);
+        -webkit-transform: translateY(1.5vh) rotate(45deg);
+        -moz-transform: translateY(1.5vh) rotate(45deg);
+        -ms-transform: translateY(1.5vh) rotate(45deg);
+        -o-transform: translateY(1.5vh) rotate(45deg);
+    }
+    .left-indicate{
+        left: 12vh;
+    }
+    
+}
+
+
+/* form */
+
+@media screen and ( orientation : landscape ) and (min-width : 750px){
+    form{
+        width : 80%;
+        margin: auto;
+    }
+
+    .box-txt{
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* background-color: hotpink; */
+    }
+}
+
+@media screen and ( orientation : landscape ) and (min-width : 990px){
+    form{
+        width : 55%;
+        margin: auto;
+    }
+}
+

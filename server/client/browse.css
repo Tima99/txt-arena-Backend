@@ -1,0 +1,110 @@
+.box-txt{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    max-width: 650px;
+    margin: auto;
+    flex-direction: column;
+}
+.txt-container{
+    width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    transform: translateY(.4rem);
+    -webkit-transform: translateY(.4rem);
+    -moz-transform: translateY(.4rem);
+    -ms-transform: translateY(.4rem);
+    -o-transform: translateY(.4rem);
+    overflow: hidden;
+    border: 1px solid grey;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.head{
+    width: 100%;
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(187, 128, 243, 0.932);
+}
+.sender{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sender span ,.date , .time{
+    margin: .3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.day span{
+    float: right;
+    font-family: monospace;
+    color: rgb(238, 238, 238);
+}
+.title{
+    /* background-color: indianred; */
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: .2rem;
+}
+
+.txt{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* max-height: 21vh; */
+    min-height: auto;
+    overflow: hidden;
+    margin: .2rem .4rem;
+    text-align: justify;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.read-more{
+    position: absolute;
+    bottom: 2.4%;
+    right: 1.2%;
+    background-color: white;
+    color: blue;
+    user-select: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: .9rem;
+}
+
+.read-more:hover{
+    cursor: pointer;
+}
+
+.shrink{
+    max-height: 20vh;
+}
+.shrink .read-more{
+    display: inline-block;       
+}
+.arr{
+    margin: 0 .7rem;
+}
+.fav{
+    display: flex;
+    padding : .3rem .1rem;
+}
+
+.likes{
+    margin: .1rem .8rem;
+    cursor: pointer;
+}
+
+.turn{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
