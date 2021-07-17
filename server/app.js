@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 8888;
 
 // TODO: connection with mongoAtlas and server
-const DB = "mongodb://localhost:27017/txt";
+const DB = process.env.DBURL;
 
 mongoose
   .connect(DB, {
