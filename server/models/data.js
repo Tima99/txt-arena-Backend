@@ -1,10 +1,17 @@
 const mongoose = require("mongoose")
 
 const data = new mongoose.Schema({
-    sender : String,
-    title  : String,
+    sender : {
+        type : String,
+        default : "Unknown"
+    },
+    title  : {
+        type : String,
+        default : "No Title"
+    },
     txt    :{
         type : String,
+        default : "no txt."
     },
     likes : {
         type : Number,
