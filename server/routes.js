@@ -38,7 +38,7 @@ routes.get("/browse" , (req, res)=>{
 
 routes.get('/browse/txt' , async(req, res)=>{
     try{
-        const data = await dataTxt.find({}).limit(20).sort({date : -1})
+        const data = await dataTxt.find({}).limit(30).sort({date : -1})
         res.send(data)
     }
     catch(err){
