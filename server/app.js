@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const routes = require("./routes");
@@ -9,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 8888;
 
 // TODO: connection with mongoAtlas and server
-const DB = process.env.DBURL;
+const DB = process.env.DBURL || process.env.DBTEST;
 
 mongoose
   .connect(DB, {
@@ -21,7 +22,7 @@ mongoose
   .then(() =>
     app.listen(PORT, () =>
       console.log(
-        `Connection stablish with Atlas | \n Server is running on ${PORT}...`
+        `Connection stablish with DB | \n Server is running on http://localhost:${PORT}...`
       )
     )
   )

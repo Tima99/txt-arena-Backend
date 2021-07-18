@@ -21,7 +21,6 @@
 
     npm start
 ```
-- You have to set environment variable itself, DBURL = value 
 - Your local server starts now goto http://localhost:8888
 
 # How to visit
