@@ -26,4 +26,4 @@
 
 # How to visit
 
-- You can also view this by link http://txt-arena.herokuapp.com
+- You can also view this  project by provided link http://txt-arena.herokuapp.com
